@@ -2,27 +2,35 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background: #212529;
 }
-
+.header {
+  padding-top: 15px;
+}
 .navbar {
-  position: sticky;
-  top: 0;
-  background: #3c03a5;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 15px; /* Position the navbar at the top of the page */
+  background: #702cf6;
+  border-radius: 28px;
+  margin-inline: 7.5%;
+  width: 85%;
+  z-index: 20;
 }
 
 .navbar-toggler {
-  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-  font-size: var(--bs-navbar-toggler-font-size);
-  line-height: 1;
-  color: var(--bs-navbar-color);
-  background-color: transparent;
   border: none;
-  border-radius: var(--bs-navbar-toggler-border-radius);
-  transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background: #702cf6;
 }
 
 .navbar .container-fluid {
-  margin-inline: 30px;
+  margin-left: 30px;
+  margin-right: 15px;
 }
 
 .navbar a {
@@ -41,6 +49,22 @@ body {
 
 .offcanvas {
   background: #101014;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.offcanvas .btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: none;
+}
+
+.offcanvas .btn-close i {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
 .offcanvas.offcanvas-start {
@@ -72,7 +96,7 @@ body {
 }
 
 .offcanvas-body .nav-item .btn:hover {
-  background-color: #13131f;
+  background-color: #905bfa;
 }
 
 .navbar-nav .nav-link.active {
@@ -82,8 +106,8 @@ body {
   text-align: start;
 }
 
-.navbar-nav .nav-link.active .btn.active {
-  background: cadetblue;
+.offcanvas-body .nav-item .btn:focus {
+  background: #905bfa;
 }
 
 .landing {
@@ -91,8 +115,12 @@ body {
   justify-content: center;
   align-items: center;
   height: calc(100vh - 56px);
-  background-color: #0d0d16;
   color: aliceblue;
+}
+
+.hero h1 {
+  padding-inline: 15px;
+  word-spacing: 5px;
 }
 
 .landing h2 {
@@ -101,18 +129,24 @@ body {
 
 .landing h1 {
   margin: 15px;
+  font-size: 900;
+  font-weight: 900;
+}
+
+.landing h1 span {
+  color: #905bfa;
 }
 
 .btn {
   margin-top: 15px;
   padding: 10px;
   color: aliceblue;
-  background-color: #040407;
+  background-color: #905bfa;
   font-size: large;
   font-weight: 500;
   border-radius: 20px;
 }
 
 .btn:hover {
-  background-color: black;
+  background-color: #8446ff;
 }
