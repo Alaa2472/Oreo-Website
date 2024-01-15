@@ -3,7 +3,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: #212529;
+  background: #0a0a0a;
 }
 
 .container,
@@ -23,7 +23,7 @@ section {
   justify-content: center;
   align-items: center;
   height: calc(100vh - 56px);
-  color: aliceblue;
+  color: #fff;
 }
 
 .icon {
@@ -37,14 +37,21 @@ section {
 .header {
   padding-top: 15px;
 }
+
 .navbar {
-  position: fixed; /* Set the navbar to fixed position */
-  top: 15px; /* Position the navbar at the top of the page */
-  background: #702cf6;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 15px;
+  /* Position the navbar at the top of the page */
+
   border-radius: 28px;
   margin-inline: 7.5%;
   width: 85%;
   z-index: 20;
+  box-shadow: inset 0px 0px 20px #000000;
+  box-shadow: 0px 1px 10px #1e1928;
+  background: rgba(119, 70, 235, 1);
+  /*backdrop-filter: blur(1.2rem);*/
 }
 
 .navbar-toggler {
@@ -55,7 +62,6 @@ section {
   outline: none;
   border: none;
   box-shadow: none;
-  background: #702cf6;
 }
 
 .navbar .container-fluid {
@@ -83,6 +89,8 @@ section {
 }
 
 .offcanvas {
+  margin-top: 50px;
+  margin-bottom: 50px;
   background: #101014;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -130,21 +138,31 @@ section {
   overflow-y: auto;
 }
 
+.offcanvas-body .nav-item {
+  list-style: none;
+}
+
 .offcanvas-body .nav-item .btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding-block: 10px;
-  padding-left: 25px;
+  padding-left: 12.5px;
   background-color: #0a0a0f;
   margin-bottom: 15px;
-  margin-left: 5px;
+
   border-radius: 13px;
   text-align: start;
   font-weight: 400;
   font-size: large;
   color: #fff;
 }
+.offcanvas-body .nav-item .btn i {
+  margin-right: 30px;
+}
 
 .offcanvas-body .nav-item .btn:hover {
-  background-color: #905bfa;
+  background-color: #7746eb;
 }
 
 .navbar-nav .nav-link.active {
@@ -155,7 +173,7 @@ section {
 }
 
 .offcanvas-body .nav-item .btn:focus {
-  background: #905bfa;
+  background: #7746eb;
 }
 
 /** HERO SECTION**/
@@ -165,21 +183,25 @@ section {
   word-spacing: 2px;
   margin-block: 15px;
   margin-inline: 15%;
-  font-size: 900;
-  font-weight: 900;
+  font-size: 65px;
+  font-weight: 800;
 }
 
 .hero h2 {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .hero p {
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin-inline: 10%;
 }
 
 .landing h1 span {
-  color: #905bfa;
+  color: #7746eb;
 }
 
 .h-btn {
@@ -187,10 +209,11 @@ section {
   padding-block: 10px;
   padding-inline: 15px;
   color: aliceblue;
-  background-color: #905bfa;
+  background-color: #7746eb;
   font-size: large;
   font-weight: 700;
   border-radius: 25px;
+  z-index: 1000;
 }
 
 .h-btn:hover {
@@ -202,6 +225,7 @@ section {
   bottom: 0;
   margin-bottom: 40px;
   width: 100%;
+  z-index: 0;
 }
 
 /**About section**/
@@ -212,15 +236,16 @@ section {
   justify-content: space-between;
   align-items: center;
   top: 0;
+  color: #0000;
 }
+
 .About {
-  background: #101014;
+  background: #212121;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
   height: auto;
-  color: aliceblue;
 }
 
 .about {
@@ -239,7 +264,7 @@ section {
 }
 
 .about h1 span {
-  color: #905bfa;
+  color: #7746eb;
 }
 
 .about-2 {
@@ -247,9 +272,9 @@ section {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .about-2 .about-h1 {
   margin-left: 18rem;
-  display: flex;
   flex-direction: column;
   display: flex;
   text-align: center;
@@ -267,24 +292,26 @@ section {
 
 .about-h1 .a8a {
   font-weight: 800;
+  color: white;
 }
-.about-h1 .a8a .w {
-  color: #c05bfa;
+
+.about-h1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: white;
 }
-.about-h1 .a8a .s {
+
+.about-h1 .a8a .c {
   color: #7746eb;
-}
-.about-2 .about-h1 p {
-  margin-top: 100px;
 }
 
 .about-text {
   margin-bottom: 15px;
 }
 
-.about-text h1 {
+.about .about-text h1 {
   margin-top: 40px;
-  font-size: 1500;
+  font-size: 50px;
   font-weight: 800;
 }
 
@@ -367,7 +394,7 @@ section {
 }
 
 .card a:hover {
-  color: #905bfa;
+  color: #7746eb;
 }
 
 .card button {
@@ -383,11 +410,12 @@ section {
 }
 
 .card button:hover {
-  background: #8446ff;
+  background: #7746eb;
   color: white;
   cursor: pointer;
   margin-inline: auto;
 }
+
 .card .share a {
   margin-inline: 12px;
 }
@@ -397,7 +425,7 @@ section {
   position: relative;
   max-width: 500px;
   width: 85%;
-  background: #282828;
+  background: #171717;
   margin: 0 15px;
   margin-top: 30px;
   padding: 10px 20px;
@@ -495,21 +523,32 @@ section {
 .waves {
   position: relative;
   width: 100%;
-  height: 30vh;
+  height: 10vh;
   margin-bottom: -7px;
   /*Fix for safari gap*/
   min-height: 150px;
   max-height: 200px;
 }
+
 .waves2 {
   position: relative;
   width: 100%;
-  height: 30vh;
-  margin-bottom: -7px;
+  height: 10vh;
+  margin-bottom: 0px;
   /*Fix for safari gap*/
   min-height: 150px;
   max-height: 200px;
   border-bottom-right-radius: 20px;
+  background: transparent;
+}
+.waves3 {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  gap: 10;
+  /*Fix for safari gap*/
+  min-height: 150px;
+  max-height: 200px;
 }
 
 .content {
@@ -526,23 +565,23 @@ section {
 }
 
 .parallax > use:nth-child(1) {
-  animation-delay: -23s;
-  animation-duration: 15s;
+  animation-delay: -1s;
+  animation-duration: 7.5s;
 }
 
 .parallax > use:nth-child(2) {
-  animation-delay: -14s;
-  animation-duration: 20s;
+  animation-delay: -5s;
+  animation-duration: 10s;
 }
 
 .parallax > use:nth-child(3) {
-  animation-delay: -40s;
-  animation-duration: 30s;
+  animation-delay: -10s;
+  animation-duration: 15s;
 }
 
 .parallax > use:nth-child(4) {
-  animation-delay: -10s;
-  animation-duration: 45s;
+  animation-delay: -20s;
+  animation-duration: 20s;
 }
 
 @keyframes move-forever {
@@ -555,18 +594,115 @@ section {
   }
 }
 
+/***PPPPPPRRRRRROOOOOOOJJJJEEEECCCCCTTTTTTTTSSSSSS***/
+
+.Projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: auto;
+}
+
+.project-txt .title {
+  top: 0;
+  font-weight: 800;
+  color: white;
+}
+.project-txt {
+  top: 0;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.project-txt h1 {
+  margin-top: 40px;
+  font-size: 1500;
+  font-weight: 800;
+}
+
+.about-h1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.about-h1 .a8a .c {
+  color: #7746eb;
+}
+
+.about-text {
+  margin-bottom: 15px;
+}
+
+.about-text h1 {
+  margin-top: 40px;
+  font-size: 1500;
+  font-weight: 800;
+}
+
+.project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.carde {
+  margin-bottom: 15px;
+  margin-inline: 20px;
+  min-width: 240px;
+  min-height: 304px;
+  background: #07182e;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.carde h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+}
+
+.carde::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(111, 0, 255),
+    rgb(207, 48, 255)
+  );
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.carde::after {
+  content: "";
+  position: absolute;
+  background: #07182e;
+  inset: 5px;
+  border-radius: 15px;
+}
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
-  .waves {
-    height: 90px;
-    min-height: 40px;
-  }
-
-  .waves2 {
-    height: 90px;
-    min-height: 40px;
-  }
-
   .content {
     height: 40vh;
   }
@@ -574,24 +710,72 @@ section {
   h1 {
     font-size: 24px;
   }
-}
 
-@media (max-width: 800px) {
+  .about .about-text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .a8a {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 45px;
+    margin-inline: 5%;
+  }
+
+  .hero h2 {
+    font-weight: bold;
+  }
+}
+@media (max-width: 700px) {
+  .offcanvas {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .oreo {
+    z-index: 1;
+  }
+
   .otto {
     flex-direction: column;
   }
+
   .About {
     height: auto;
   }
+
+  .about-text h1 {
+    font-size: 45px;
+  }
+
   .card {
     width: 18em;
     height: auto;
   }
+
   .card button {
     margin-top: 15px;
     margin-bottom: 15px;
   }
+
   .about-h1 {
     margin-left: 0;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 360px) {
+  .oreo {
+    margin-bottom: auto;
+    margin-bottom: -15px;
   }
 }
