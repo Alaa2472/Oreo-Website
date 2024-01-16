@@ -740,8 +740,10 @@ section {
   }
 }
 @media (max-width: 600px) {
+  .hero {
+    margin-top: 40px;
+  }
   .hero h1 {
-    margin-top: 20px;
     font-size: 40px;
     margin-inline: 5%;
   }
