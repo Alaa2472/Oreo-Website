@@ -44,14 +44,14 @@ section {
   top: 15px;
   /* Position the navbar at the top of the page */
 
-  border-radius: 28px;
+  border-radius: 35px;
   margin-inline: 7.5%;
   width: 85%;
-  z-index: 20;
   box-shadow: inset 0px 0px 20px #000000;
   box-shadow: 0px 1px 10px #1e1928;
-  background: rgba(119, 70, 235, 1);
+  background: #7746eb;
   /*backdrop-filter: blur(1.2rem);*/
+  z-index: 100;
 }
 
 .navbar-toggler {
@@ -76,8 +76,17 @@ section {
 }
 
 .container-fluid a {
-  font-size: large;
+  text-decoration: none;
+  font-size: 25px;
   font-weight: 700;
+}
+
+.container-fluid i {
+  font-size: smaller;
+}
+.container-fluid img {
+  width: 2.5rem;
+  z-index: 5;
 }
 
 .navbar .navbar-brand:focus {
@@ -213,7 +222,8 @@ section {
   font-size: large;
   font-weight: 700;
   border-radius: 25px;
-  z-index: 1000;
+  z-index: 10;
+  position: relative;
 }
 
 .h-btn:hover {
@@ -655,6 +665,7 @@ section {
   margin-inline: 20px;
   min-width: 240px;
   min-height: 304px;
+
   background: #07182e;
   position: relative;
   display: flex;
@@ -662,12 +673,18 @@ section {
   place-items: center;
   overflow: hidden;
   border-radius: 15px;
+  flex-direction: column;
 }
 
+.carde img {
+  width: 10rem;
+  z-index: 5;
+}
 .carde h2 {
   z-index: 1;
   color: white;
   font-size: 2em;
+  font-weight: 40;
 }
 
 .carde::before {
