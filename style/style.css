@@ -1020,9 +1020,9 @@ form#contact button:hover {
 
 }
 
-@media (min-width: 820px) {
+@media (width: 820px) {
   .waves {
-    margin-bottom: -60px;
+    margin-bottom: -88px;
   }
   
 }
