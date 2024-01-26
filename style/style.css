@@ -640,6 +640,7 @@ section {
   height: auto;
 }
 
+
 .project-txt .title {
   top: 0;
   font-weight: 800;
@@ -691,9 +692,8 @@ section {
 }
 
 .carde {
-  min-width: 270px;
+  min-width: 250px;
   min-height: 364px;
-  margin-inline: 40px;
   margin-bottom: 30px;
   background: #07182e;
   position: relative;
@@ -766,8 +766,7 @@ section {
 .contact-us .container .cow {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  margin-inline: 0px;
 }
 
 
@@ -1003,8 +1002,8 @@ form#contact button:hover {
 }
 
 .carde {
-  max-width: 340px;
-  max-height: 404px;
+  max-width: 240px;
+  max-height: 304px;
   margin-inline: 40px;
   margin-bottom: 30px;
   background: #07182e;
@@ -1022,8 +1021,8 @@ form#contact button:hover {
 
 
 @media (max-width: 600px) {
-  
-    
+
+
   .hero {
     margin-top: 90px;
   }
@@ -1037,7 +1036,9 @@ form#contact button:hover {
   }
 }
 @media (max-width: 700px) {
-
+  .contact-us .container .cow {
+    flex-direction: column !important;
+  }
 
   .waves4 {
     margin-bottom: auto;
@@ -1090,6 +1091,7 @@ form#contact button:hover {
     flex-direction: column;
   }
 
+ 
 
 }
 
