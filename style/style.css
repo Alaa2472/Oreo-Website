@@ -1,3 +1,7 @@
+:root {
+  --main-color: #212121;
+}
+
 html,
 body {
   height: 100vh;
@@ -22,8 +26,9 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 70px);
   color: #fff;
+  width: auto;
 }
 
 .icon {
@@ -297,7 +302,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 12em;
+  margin-left: 12rem;
 }
 
 .about-h1 .a8a {
@@ -534,7 +539,8 @@ section {
   position: relative;
   width: 100%;
   height: 10vh;
-  margin-bottom: -7px;
+  gap: 10;
+  margin-bottom: 0px;
   /*Fix for safari gap*/
   min-height: 150px;
   max-height: 200px;
@@ -555,6 +561,26 @@ section {
   position: relative;
   width: 100%;
   height: 20vh;
+  gap: 10;
+  /*Fix for safari gap*/
+  min-height: 150px;
+  max-height: 200px;
+}
+
+.waves4 {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  gap: 10;
+  /*Fix for safari gap*/
+  min-height: 150px;
+  max-height: 200px;
+}
+
+.waves5{  
+  position: relative;
+  width: 100%;
+  height: 10vh;
   gap: 10;
   /*Fix for safari gap*/
   min-height: 150px;
@@ -633,21 +659,25 @@ section {
   font-weight: 800;
 }
 
-.about-h1 p {
+.project-txt h1 span {
+  color: #8446ff;
+}
+
+.project-txt p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: white;
 }
 
-.about-h1 .a8a .c {
+.project-h1 .a8a .c {
   color: #7746eb;
 }
 
-.about-text {
+.project-text {
   margin-bottom: 15px;
 }
 
-.about-text h1 {
+.project-text h1 {
   margin-top: 40px;
   font-size: 1500;
   font-weight: 800;
@@ -661,11 +691,10 @@ section {
 }
 
 .carde {
-  margin-bottom: 15px;
-  margin-inline: 20px;
-  min-width: 240px;
-  min-height: 304px;
-
+  min-width: 270px;
+  min-height: 364px;
+  margin-inline: 40px;
+  margin-bottom: 30px;
   background: #07182e;
   position: relative;
   display: flex;
@@ -683,8 +712,8 @@ section {
 .carde h2 {
   z-index: 1;
   color: white;
-  font-size: 2em;
-  font-weight: 40;
+  font-size: 2.5em;
+  font-weight: 400;
 }
 
 .carde::before {
@@ -718,6 +747,179 @@ section {
   inset: 5px;
   border-radius: 15px;
 }
+
+
+/**Contact**/
+
+
+.contact-us {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  min-height: calc(100vh - 90px);
+  height: auto;
+  background: var(--main-color);
+  background-image: url(../images/contact-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: auto;
+}
+
+
+.section-heading {
+  margin-top: 70px;
+  margin-right: 120px;
+}
+
+.contact-us .section-heading h2,
+.contact-us .section-heading h2 em,
+.contact-us .section-heading h2  {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+
+}
+
+.contact-us .section-heading h2 span {
+  color: #8446ff;
+}
+
+.contact-us .section-heading p {
+  font-size: larger;
+  color: #fff;
+  margin-top: 30px;
+
+}
+
+.contact-us .section-heading .asg {
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none
+}
+
+.contact-us .phone-info {
+  margin-top: 20px;
+}
+
+.contact-us .phone-info h4 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.contact-us .phone-info h4 span i {
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  text-align: center;
+  line-height: 46px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #ff3b2c;
+  font-size: 22px;
+  margin-left: 30px;
+  margin-right: 15px;
+}
+
+.phone-info h4 span a {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+form#contact .contact-dec {
+  position: absolute;
+  right: -166px;
+  bottom: 0;
+}
+
+form#contact .contact-dec img {
+  max-width: 178px;
+}
+
+form#contact {
+  margin-top: 80px;
+  position: relative;
+  background-color: #171717;
+  padding: 60px 30px;
+  border-radius: 20px;
+  clip-path: polygon(
+    30px 0%,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%,
+    0% 30px
+  );
+}
+
+form#contact input {
+  width: 100%;
+  height: 46px;
+  border-radius: 33px;
+  background-color: #f7fdff;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+
+form#contact input::placeholder {
+  color: #2a2a2a;
+}
+
+form#contact textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 180px;
+  min-height: 140px;
+  height: 140px;
+  border-radius: 20px;
+  background-color: #f7fdff;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+form#contact textarea::placeholder {
+  color: #2a2a2a;
+}
+
+form#contact button {
+  display: inline-block;
+  background-color: #7746eb;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+}
+
+form#contact button:hover {
+  background-color: #8b51fd;
+}
+
+
+
+
+
+
+
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .content {
@@ -739,7 +941,70 @@ section {
     font-size: 40px;
   }
 }
+
+@media (min-width: 1050px) {
+ .project-txt{
+  margin-inline: 18rem;
+}
+  .waves4{
+    margin-bottom: -250px;
+  }
+
+  .waves5 {
+    bottom : -165px;
+  }
+}
+
+@media (max-width:1065px) {
+
+  .project-txt {
+    margin-inline: 8rem;
+  }
+
+ .contact-us .section-heading {
+    margin-right: 0px;
+  }
+
+
+  .contact-us .section-heading h2,
+.contact-us .section-heading h2 em,
+.contact-us .section-heading p ,
+  .contact-us .section-heading h2 span {
+  text-align: center;
+}
+
+.about-h1{
+  margin-top: 50px;
+  margin-left: 3rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.carde {
+  min-width: 340px;
+  min-height: 404px;
+  margin-inline: 40px;
+  margin-bottom: 30px;
+  background: #07182e;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+
+}
+
+
 @media (max-width: 600px) {
+  
+    
   .hero {
     margin-top: 90px;
   }
@@ -753,13 +1018,19 @@ section {
   }
 }
 @media (max-width: 700px) {
+
+
+  .waves4 {
+    margin-bottom: auto;
+  }
+
+  .oreo{
+    bottom: -15px;
+  }
+
   .offcanvas {
     margin-top: 15px;
     margin-bottom: 15px;
-  }
-
-  .oreo {
-    z-index: 1;
   }
 
   .otto {
@@ -771,6 +1042,10 @@ section {
   }
 
   .about-text h1 {
+    font-size: 45px;
+  }
+
+  .project-txt h1 {
     font-size: 45px;
   }
 
@@ -791,11 +1066,27 @@ section {
   .project-card {
     flex-direction: column;
   }
-}
 
-@media (max-width: 360px) {
-  .oreo {
-    margin-bottom: auto;
-    margin-bottom: -15px;
+  .carde {
+    min-width: 280px;
+    min-height: 374px;
+    margin-inline: 40px;
+    margin-bottom: 30px;
+    background: #07182e;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    flex-direction: column;
   }
 }
+
+
+
+
+
+
+
+
