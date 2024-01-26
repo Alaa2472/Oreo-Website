@@ -971,7 +971,7 @@ form#contact button:hover {
 }
 
 @media (max-width:1065px) {
-
+  
   .contact-us .container .cow {
     flex-direction: column !important;
   }
@@ -1018,6 +1018,13 @@ form#contact button:hover {
 }
 
 
+}
+
+@media (min-width: 820px) {
+  .waves {
+    margin-bottom: -60px;
+  }
+  
 }
 
 
