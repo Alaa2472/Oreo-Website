@@ -753,8 +753,6 @@ section {
 
 
 .contact-us {
-  justify-content: center;
-  align-items: center;
   display: block;
   min-height: calc(100vh - 90px);
   height: auto;
@@ -763,13 +761,24 @@ section {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  margin: auto;
+}
+
+.contact-us .container .cow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .section-heading {
   margin-top: 70px;
-  margin-right: 120px;
+
+  margin-inline: 20px;
+}
+
+.contact-us .container {
+  padding-top: 100px;
 }
 
 .contact-us .section-heading h2,
@@ -790,6 +799,7 @@ section {
   color: #fff;
   margin-top: 30px;
 
+  margin-inline: 20px;
 }
 
 .contact-us .section-heading .asg {
@@ -803,7 +813,9 @@ section {
 }
 
 .contact-us .phone-info h4 {
+  text-align: center;
   font-size: 30px;
+
   font-weight: 700;
   color: #fff;
 }
@@ -839,6 +851,7 @@ form#contact .contact-dec img {
 }
 
 form#contact {
+  margin-inline: 40px;
   margin-top: 80px;
   position: relative;
   background-color: #171717;
@@ -943,25 +956,31 @@ form#contact button:hover {
 }
 
 @media (min-width: 1050px) {
- .project-txt{
-  margin-inline: 18rem;
-}
+  .project-txt{
+    margin-inline: 18rem;
+  }
+
   .waves4{
     margin-bottom: -250px;
   }
 
   .waves5 {
-    bottom : -165px;
+    bottom : -65px;
   }
+
 }
 
 @media (max-width:1065px) {
 
-  .project-txt {
-    margin-inline: 8rem;
+  .contact-us .container .cow {
+    flex-direction: column !important;
   }
 
- .contact-us .section-heading {
+  .project-txt {
+    margin-inline: 5rem;
+  }
+
+  .contact-us .section-heading {
     margin-right: 0px;
   }
 
@@ -1062,6 +1081,10 @@ form#contact button:hover {
   .about-h1 {
     margin-left: 0;
   }
+  .Projects {
+    margin-inline: auto;
+    width: auto;
+  }
 
   .project-card {
     flex-direction: column;
@@ -1070,15 +1093,7 @@ form#contact button:hover {
   .carde {
     min-width: 280px;
     min-height: 374px;
-    margin-inline: 40px;
     margin-bottom: 30px;
-    background: #07182e;
-    position: relative;
-    display: flex;
-    place-content: center;
-    place-items: center;
-    overflow: hidden;
-    border-radius: 15px;
     flex-direction: column;
   }
 }
