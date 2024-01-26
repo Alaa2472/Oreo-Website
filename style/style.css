@@ -1003,8 +1003,8 @@ form#contact button:hover {
 }
 
 .carde {
-  min-width: 340px;
-  min-height: 404px;
+  max-width: 340px;
+  max-height: 404px;
   margin-inline: 40px;
   margin-bottom: 30px;
   background: #07182e;
@@ -1090,12 +1090,7 @@ form#contact button:hover {
     flex-direction: column;
   }
 
-  .carde {
-    min-width: 280px;
-    min-height: 374px;
-    margin-bottom: 30px;
-    flex-direction: column;
-  }
+
 }
 
 
