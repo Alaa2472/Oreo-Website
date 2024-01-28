@@ -588,7 +588,6 @@ section {
   width: 100%;
   height: 10vh;
   gap: 10;
-  margin-bottom: -200px;
   /*Fix for safari gap*/
   min-height: 150px;
   max-height: 200px;
@@ -970,7 +969,7 @@ form#contact button:hover {
     margin-bottom: -250px;
   }
   .waves5 {
-    bottom : -75px;
+    margin-bottom : -105px;
   }
 
 }
