@@ -1032,6 +1032,11 @@ form#contact button:hover {
   .waves {
     margin-bottom: -95px;
   }
+
+  .waves2, .waves3, .waves4, .waves5 {
+    margin-bottom: auto;
+
+  }
   
 }
 
