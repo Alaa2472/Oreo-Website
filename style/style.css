@@ -1004,6 +1004,9 @@ form#contact button:hover {
 }
 
 @media (max-width:1065px) {
+  .oreo4 {
+    margin-bottom: -50px;
+  }
   .oreo5 {
     width: 100%;
     position: relative;
@@ -1073,10 +1076,6 @@ form#contact button:hover {
     margin-bottom: -95px;
   }
 
-  .waves2, .waves3, .waves4, .waves5 {
-    margin-bottom: auto;
-
-  }
   
 }
 
