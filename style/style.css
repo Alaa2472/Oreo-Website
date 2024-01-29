@@ -1125,6 +1125,9 @@ form#contact button:hover {
 .About {
   min-height: 82vh;
 }
+.about-text h1 {
+  margin-inline: 15rem;
+}
 }
 
 @media (max-width: 855px) { 
