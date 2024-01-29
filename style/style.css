@@ -1121,9 +1121,7 @@ form#contact button:hover {
 }
 
 @media (max-width: 820px) {
-  .waves2-1{ 
-    margin-bottom: 100px;
-}
+
 .About {
   min-height: 82vh;
 }
