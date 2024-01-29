@@ -39,3 +39,11 @@ console.log(devteam + " " + frontDev);
 console.log("turbo word length = " + devteam[2].length);
 console.log(frontDev.includes("yassin"));
 console.log(typeof frontDev);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    document.getElementById ("loader").style.display = "none";
+    document.getElementById("contentoz").style.display = "block";
+  }, 1500); // 3000 milliseconds (3 seconds)
+});
