@@ -1,0 +1,22 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Oreo Portfolio Website",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alaa2472/website-oro.git"
+  },
+  "keywords": [
+    "Oreo"
+  ],
+  "author": "o8r.0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alaa2472/website-oro/issues"
+  },
+  "homepage": "https://github.com/Alaa2472/website-oro#readme"
+}
