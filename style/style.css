@@ -1120,6 +1120,15 @@ form#contact button:hover {
   
 }
 
+@media (width: 805px) {
+  .waves2-1{ 
+    margin-bottom: 100px;
+}
+.About {
+  min-height: 82vh;
+}
+}
+
 @media (max-width: 855px) { 
 .h-btn{
   margin-top: 50px;
