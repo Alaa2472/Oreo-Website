@@ -43,22 +43,6 @@ section {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .navbar {
   position: fixed;
   /* Set the navbar to fixed position */
@@ -176,14 +160,12 @@ section {
 .offcanvas-body .nav-item .btn {
   display: flex;
   flex-direction: row;
-  align-items: center;
   padding-block: 10px;
   padding-left: 12.5px;
   background-color: #0a0a0f;
   margin-bottom: 15px;
-
+  align-items: center;
   border-radius: 13px;
-  text-align: start;
   font-weight: 400;
   font-size: large;
   color: #fff;
@@ -1039,7 +1021,7 @@ form#contact button:hover {
   }
 
   .waves4 {
-    margin-bottom: 120px;
+    margin-bottom: 140px;
   }
   .waves {
     margin-bottom: 0px;
@@ -1049,7 +1031,9 @@ form#contact button:hover {
 
 @media (max-width:1065px) { 
   
-
+.waves4 {
+  margin-bottom: 60px;
+}
   .waves {
     margin-bottom: 12px;
   }
@@ -1161,7 +1145,7 @@ form#contact button:hover {
     margin-bottom: -60px;
   }
   .oreo {
-    margin-bottom: 12PX;
+    margin-bottom: 0px;
   }
 }
 
@@ -1192,6 +1176,9 @@ form#contact button:hover {
   }
 
 
+  .waves {
+    margin-bottom: 15px;
+  }
   
   .oreo{
     bottom: -15px;
@@ -1299,6 +1286,10 @@ form#contact button:hover {
     color: white;
     font-size: 2em;
     font-weight: 400;
+  }
+
+  .waves {
+    margin-bottom: 0px;
   }
   
 }
@@ -1410,3 +1401,5 @@ footer {
   right: 15%;
   animation-delay: .3s;
 }
+
+
