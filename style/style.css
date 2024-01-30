@@ -260,20 +260,13 @@ section {
   width: 100%;
 }
 
-.oreo5 {
-  width: 100%;
-  position: relative;
- 
-  top: -140px;
-
-}
 
 .oreo4 {
   width: 100%;
   position: relative;
   bottom: 0;
-  margin-bottom: -275px;
 }
+
 
 /**About section**/
 
@@ -575,7 +568,6 @@ section {
 .waves {
   position: relative;
   width: 100%;
-  height: 10vh;
   gap: 10;
   margin-bottom: 0px;
   /*Fix for safari gap*/
@@ -587,7 +579,6 @@ section {
 .waves2 {
   position: relative;
   width: 100%;
-  height: 10vh;
   margin-bottom: 0px;
   /*Fix for safari gap*/
   min-height: 150px;
@@ -600,7 +591,6 @@ section {
 .waves2-1 {
   position: relative;
   width: 100%;
-  height: 10vh;
   margin-bottom: 0px;
   /*Fix for safari gap*/
   min-height: 150px;
@@ -610,7 +600,6 @@ section {
 .waves3 {
   position: relative;
   width: 100%;
-  height: 20vh;
   gap: 10;
   /*Fix for safari gap*/
   min-height: 150px;
@@ -620,7 +609,6 @@ section {
 .waves4 {
   position: relative;
   width: 100%;
-  height: 10vh;
   gap: 10;
   margin-bottom: 0px;
   /*Fix for safari gap*/
@@ -633,7 +621,7 @@ section {
   width: 100%;
   height: 10vh;
   gap: 10;
-  margin-top: -10px;
+  margin-bottom: 0px;
   /*Fix for safari gap*/
   min-height: 150px;
   max-height: 200px;
@@ -809,7 +797,7 @@ section {
 
 .contact-us {
   display: block;
-  min-height: calc(100vh - 0px);
+  min-height: 70vh;
   height: auto;
   background: var(--main-color);
   background-image: url(../images/contact-bg.png);
@@ -822,6 +810,7 @@ section {
   display: flex;
   flex-direction: row;
   margin-inline: 0px;
+  align-items: center;
 }
 
 
@@ -832,7 +821,7 @@ section {
 }
 
 .contact-us .container {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .contact-us .section-heading h2,
@@ -867,7 +856,6 @@ section {
 }
 
 .contact-us .phone-info h4 {
-  text-align: center;
   font-size: 30px;
   margin-inline: 5px;
   font-weight: 700;
@@ -953,7 +941,7 @@ form#contact textarea {
   outline: none;
   font-size: 15px;
   font-weight: 300;
-  color: #fff;
+  color: #a3a3a3;
   padding: 15px 20px;
   margin-bottom: 20px;
 }
@@ -1021,41 +1009,16 @@ form#contact button:hover {
   }
 
   .waves4 {
-    margin-bottom: 140px;
+    margin-bottom: -120px;
   }
   .waves {
     margin-bottom: 0px;
   }
-
-}
-
-@media (max-width:1065px) { 
   
-.waves4 {
-  margin-bottom: 60px;
-}
-  .waves {
-    margin-bottom: 12px;
-  }
-   .oreo4 {
-  margin-bottom: -50px;
+
 }
 
-  .oreo5 {
-    width: 100%;
-    position: relative;
-   
-    top: -140px;
-  
-  }
-  form#contact {
-
-  margin-bottom: 300px;
-  }
-  .waves5 {
-    margin-bottom: auto;
-  }
-
+@media (max-width:1065px) {
   
   .contact-us .container .cow {
     flex-direction: column !important;
@@ -1088,8 +1051,6 @@ form#contact button:hover {
 }
 
 .carde {
-  max-width: 240px;
-  max-height: 304px;
   margin-inline: 40px;
   margin-bottom: 30px;
   background: #07182e;
@@ -1105,13 +1066,6 @@ form#contact button:hover {
 
 }
 
-@media (width: 820px) {
-  .waves {
-    margin-bottom: -95px;
-  }
-
-  
-}
 
 
 
@@ -1132,21 +1086,14 @@ form#contact button:hover {
   margin-top: 50px;
   margin-bottom: 248px;
 }
-  .waves4 {
-    margin-bottom: 58px;
-  }
 
-  .waves {
-    margin-bottom: 0px;
-  }
+.footer {
+  margin-bottom: 0;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
 
-
-  .oreo4 {
-    margin-bottom: -60px;
-  }
-  .oreo {
-    margin-bottom: 0px;
-  }
+ 
 }
 
 
@@ -1175,18 +1122,6 @@ form#contact button:hover {
     flex-direction: column !important;
   }
 
-
-  .waves {
-    margin-bottom: 15px;
-  }
-  
-  .oreo{
-    bottom: -15px;
-  }
-
-  .oreo4 {
-    margin-bottom: -50px;
-  }
 
   .offcanvas {
     margin-top: 15px;
@@ -1296,9 +1231,20 @@ form#contact button:hover {
 
 
 
-footer {
+.footer {
+  position: relative;
   background: #0a0a0a;
+  width: 90%;
+  margin: auto;
+  top: 10px;
+  margin-bottom: 25px;
+  
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
+
 
 
 
