@@ -688,7 +688,7 @@ section {
 }
 .project-txt {
   top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
   display: grid;
   grid-column: auto;
   text-align: center;
@@ -698,6 +698,7 @@ section {
   margin-top: 0px;
   font-size: 1500;
   font-weight: 800;
+  margin-bottom: 30px;
 
 }
 
