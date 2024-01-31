@@ -1010,7 +1010,7 @@ form#contact button:hover {
   }
 
   .waves4 {
-    margin-bottom: -120px;
+    margin-bottom: -45px;
   }
   .waves {
     margin-bottom: 0px;
@@ -1083,9 +1083,11 @@ form#contact button:hover {
 
 
 @media (max-width: 850px) { 
+
   .phone-info {
     text-align: center;
   }
+
 .h-btn{
   margin-top: 50px;
   margin-bottom: 248px;
