@@ -1,4 +1,10 @@
+:root {
+  --darker: #27374D;
+  --dark: #526D82;
+  --main2: #9DB2BF;
+  --main: #DDE6ED;
 
+}
 /**About section**/
 
 .otto {
@@ -11,7 +17,7 @@
   }
   
   .About {
-    background: #212121;
+    background: var(--dark);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +29,7 @@
     margin-top: 40px;
     margin-bottom: 40px;
     z-index: 5;
-    color: #fff;
+    color: var(--main);
   }
   
   .about h2 {
@@ -38,13 +44,14 @@
   }
   
   .about h1 span {
-    color: #7746eb;
+    color: var(--darker);
   }
   
   .about-2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 5rem;
   }
   
   .about-2 .about-h1 {
@@ -61,7 +68,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 12rem;
+    margin-left: 14rem;
   }
   
   .about-h1 .a8a {
@@ -76,7 +83,7 @@
   }
   
   .about-h1 .a8a .c {
-    color: #7746eb;
+    color: var(--darker);
   }
   
   .about-text {
@@ -91,29 +98,243 @@
     font-weight: 800;
   }
   
-  .progress {
-    margin-bottom: 25px;
-    max-width: 24rem;
-    min-width: 12rem;
-  }
-  
   .a7a {
     position: sticky;
     right: 100%;
     bottom: 1%;
   }
 
+
+
+
+
+/**CAAAAARRRRRDDD**/
+.cardp {
+  max-width: 25em;
+  width: 70%;
+  min-width: 18em;
+  height: 30em;
+
+  margin-right: 10rem;
+  background: var(--main2);
+  transition: 1s ease-in-out;
+  clip-path: polygon(
+    30px 0%,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%,
+    0% 30px
+  );
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  left: 0;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-bottom: 15px;
+  z-index: 5;
+  margin-inline: auto;
+}
+
+.cardp span {
+  font-weight: bold;
+  color: var(--darker);
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+.cardp .info {
+  font-weight: 400;
+  color: var(--darker);
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.72em;
+  margin: 1em;
+}
+
+.cardp img {
+  max-width: 12em;
+  max-height: 12em;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.cardp span {
+  font-size: larger;
+  font-weight: 800;
+}
+
+.cardp .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.cardp a {
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.cardp a:hover {
+  color: var(--darker);
+}
+
+.cardp button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: 0.25s ease-in-out;
+}
+
+.cardp button:hover {
+  background: var(--darker);
+  color: white;
+  cursor: pointer;
+  margin-inline: auto;
+}
+
+.cardp .share a {
+  margin-inline: 12px;
+}
+
+
+
+
+
+/**SKIIIIILLLLSSSSSSSS**/
+.containero {
+  position: relative;
+  max-width: 500px;
+  width: 120%;
+  background: var(--main2);
+  margin: 0 0px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  text-align: start;
+}
+
+.containero .skill-boxo {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.skill-boxo .titleo {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--darker);
+}
+
+.skill-boxo .skill-baro {
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: rgba(236, 236, 236, 0.1);
+}
+
+.skill-baro .skill-pero {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 90%;
+  border-radius: 6px;
+  background: var(--darker);
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+
+.skill-pero.htmlo {
+  /*progreso de las diferentes lenguajes*/
+  width: 90%;
+  animation-delay: 0.1s;
+}
+
+.skill-pero.csso {
+  /*progreso de las diferentes lenguajes*/
+  width: 70%;
+  animation-delay: 0.1s;
+}
+
+.skill-pero.Boostrapo {
+  /*progreso de las diferentes lenguajes*/
+  width: 50%;
+  animation-delay: 0.2s;
+}
+
+
+.progress {
+  margin-bottom: 25px;
+  max-width: 24rem;
+  min-width: 12rem;
+}
+
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-pero .tooltipo {
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--main);
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: var(--darker);
+  z-index: 1;
+}
+
+.tooltipo::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: var(--darker);
+  transform: translateX(-50%) rotate(45deg);
+}
+
   
 
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
+
+  .about-2 {
+    margin-left: 0px;
+    margin-inline: auto;
+  }
 
     h1 {
       font-size: 24px;
     }
   
     .about .about-text h1 {
-      font-size: 40px;
+      font-size: 30px;
       margin-bottom: 15px;
     }
   }
@@ -121,25 +342,28 @@
   @media (max-width:1065px) {
    .about-h1{
     margin-top: 50px;
-    margin-left: 3rem;
+    margin-left: 8rem;
   }
   }
 
   @media (max-width: 850px) { 
   .waves {
-    margin-bottom: auto;
+    margin-bottom: 11px;
   }
 
   .About {
     min-height: 82vh;
   }
-
-  .about-text h1 {
-    margin-inline: 2rem;
+  .about-text {
+    font-size: small;
+  }
+  .cardp {
+    margin-left: 0px;
+    margin-inline: auto;
   }
   }
   
-  @media (max-width: 720px) {
+  @media (max-width: 780px) {
     .otto {
       flex-direction: column;
     }
@@ -149,7 +373,7 @@
     }
   
     .about-text h1 {
-      font-size: 45px;
+      font-size: 5px;
     }
   
     .about-h1 {
@@ -158,9 +382,12 @@
   }
   
   
-  @media (max-width: 400) {
+  @media (max-width: 450px) {
     .waves {
-      margin-bottom: -30px;
+      margin-bottom: -2px;
+    }
+    .containero {
+      width: 90%;
     }
   }
   

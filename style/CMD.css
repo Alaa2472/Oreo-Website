@@ -1,8 +1,20 @@
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
 
+
+:root {
+  --darker: #27374D;
+  --dark: #526D82;
+  --main2: #9DB2BF;
+  --main: #DDE6ED;
+
+}
 /*START CAROUSEL*/
 .CMD {
     height: auto;
-    background: #17191b;
+    background: var(--darker);
   }
   
   .width {
@@ -14,7 +26,8 @@
   .accordion {
     border-radius: 15px;
     margin: 25px;
-  
+    margin-top: 100px;
+  margin-bottom: 60px;
   }
    .accordion-header {
     padding: 10px;
@@ -32,7 +45,7 @@
   }
   
   .accordion-item:not(.collapsed) {
-    background: #252527;
+    background: var(--main2);
     color: #111;
     cursor: pointer;
     border-radius: 15px;
@@ -40,7 +53,7 @@
   }
   
   .accordion-button:not(.collapsed) {
-    background: #8b51fd;
+    background: var(--darker);
     width: 100%;
     color: #fff;
     box-shadow: none;
@@ -50,7 +63,7 @@
   }
   
   .accordion-button:not(.collapsed):focus {
-    background: #8b51fd;
+    background: var(--darker);
     width: 100%;
     color: #fff;
     box-shadow: none;
@@ -60,7 +73,7 @@
   }
   
   .accordion-button {
-    background: #8446ff;
+    background: var(--dark);
     width: 100%;
     color: #fff ;
     font-weight: 600;

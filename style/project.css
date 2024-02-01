@@ -1,3 +1,10 @@
+:root {
+  --darker: #27374D;
+  --dark: #526D82;
+  --main2: #9DB2BF;
+  --main: #DDE6ED;
+
+}
 
 /***PPPPPPRRRRRROOOOOOOJJJJEEEECCCCCTTTTTTTTSSSSSS***/
 
@@ -7,6 +14,7 @@
     align-items: center;
     min-height: 100vh;
     height: auto;
+    background: var(--main);
   }
   
   
@@ -25,20 +33,20 @@
   
   .project-txt h1 {
     margin-top: 30px;
-    font-size: 1500;
+    font-size: 60px;
     font-weight: 800;
     margin-bottom: 30px;
-  
+  color: var(--dark);
   }
   
   .project-txt h1 span {
-    color: #8446ff;
+    color: var(--darker);
   }
   
   .project-txt p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: white;
+    color: var(--dark);
   }
   
   .project-h1 .a8a .c {
@@ -60,7 +68,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-inline: auto;
+    margin-inline: -10px;
   }
   
   .row-cols-1>* {
@@ -87,10 +95,10 @@
 .cardk {
     --main-color: #fff;
     --submain-color: #91a0ab;
-    --bg-color: #212121;
+    --bg-color: #27374D;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: relative;
-    width: 270px;
+    max-width: 320px;
     height: 354px;
     display: flex;
     flex-direction: column;
@@ -114,8 +122,8 @@
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
-    height: 160px;
-  }
+    max-height: 181px;
+    }
   
   
   .card__avatar {
@@ -181,10 +189,10 @@
   
   
 /*Shrinking for mobile*/
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 
     .project-txt h1 {
-      font-size: 60px;
+      font-size: 30px;
     }
   }
   
@@ -203,12 +211,18 @@
     display: flex;
     flex-direction: column;
   }
-    
+   
+  }
+
+  @media (max-width: 950px) {
+    .project-body {
+      margin-bottom: 0px;
+    }
   }
   
   @media (max-width: 720px) {
+
     .project-txt h1 {
-      font-size: 45px;
       margin-inline: -50px;
     }
 
@@ -223,3 +237,13 @@
   
   }
   
+
+  @media (max-width: 400px) {
+
+    .cardk {
+      max-width: 200px;
+  }
+  .card__img img {
+    height: 120px;
+  }
+}
