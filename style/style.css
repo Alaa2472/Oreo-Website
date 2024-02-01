@@ -324,6 +324,16 @@ section {
   max-height: 200px;
 }
 
+.waves9 {
+  position: relative;
+  width: 100%;
+  gap: 10;
+  margin-bottom: 0px;
+  /*Fix for safari gap*/
+  min-height: 150px;
+  max-height: 200px;
+}
+
 
 .waves5{  
   position: relative;
@@ -415,6 +425,10 @@ section {
   .waves4 {
     margin-bottom: 0px;
   }
+
+  .waves9 {
+    margin-bottom: -42px;
+  }
   .waves {
 
   margin-bottom: 0px;
@@ -476,7 +490,8 @@ section {
 
 @media (min-width: 980px) {
   .oreo {
-  margin-bottom: -40px; }
+  margin-bottom: -40px; 
+}
 }
 
 
