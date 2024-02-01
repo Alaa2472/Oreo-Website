@@ -84,13 +84,13 @@
   }
   
   .input-group-text{
-    background: #121212 ;
-    color: #ffffff ;
+    background: var(--main) ;
+    color: var(--darker) ;
     font-weight: 500;
     font-size: medium;
-    outline: #3f3f46;
-    border: #3f3f46;
-    margin-right: 3px;
+    outline: 2px var(--darker)!important;
+    border: 2px solid var(--darker)!important;
+    margin-right: 0px;
   }
   
   .accordion-body {
