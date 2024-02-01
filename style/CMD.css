@@ -1,0 +1,93 @@
+
+/*START CAROUSEL*/
+.CMD {
+    height: auto;
+    background: #17191b;
+  }
+  
+  .width {
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+  }
+  
+  .accordion {
+    border-radius: 15px;
+    margin: 25px;
+  
+  }
+   .accordion-header {
+    padding: 10px;
+  } 
+  
+  
+  
+  
+  .accordion-item {
+    color: #111;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: #000000;
+  }
+  
+  .accordion-item:not(.collapsed) {
+    background: #252527;
+    color: #111;
+    cursor: pointer;
+    border-radius: 15px;
+    
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background: #8b51fd;
+    width: 100%;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+    border-radius: 15px !important;
+   
+  }
+  
+  .accordion-button:not(.collapsed):focus {
+    background: #8b51fd;
+    width: 100%;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+    border-radius: 15px;
+  
+  }
+  
+  .accordion-button {
+    background: #8446ff;
+    width: 100%;
+    color: #fff ;
+    font-weight: 600;
+    font-size: large;
+    outline: none;
+    border-radius: 15px !important;
+    
+  }
+  
+  .input-group-text{
+    background: #121212 ;
+    color: #ffffff ;
+    font-weight: 500;
+    font-size: medium;
+    outline: #3f3f46;
+    border: #3f3f46;
+    margin-right: 3px;
+  }
+  
+  .accordion-body {
+    color: white;
+    border-radius: 15px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
