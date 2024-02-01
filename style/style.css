@@ -707,7 +707,7 @@ section {
 }
 
 .loader {
-  background: #000000;
+  background: var(--main);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -720,7 +720,7 @@ section {
   height: 20px;
   position: absolute;
   border-radius: 50%;
-  background-color: #8446ff;
+  background-color: var(--darker);
   left: 15%;
   transform-origin: 50%;
   animation: circle7124 .5s alternate infinite ease;
@@ -760,7 +760,7 @@ section {
   width: 20px;
   height: 4px;
   border-radius: 50%;
-  background-color: rgb(119, 119, 119);
+  background-color: var(--dark);
   position: absolute;
   top: 62px;
   transform-origin: 50%;
