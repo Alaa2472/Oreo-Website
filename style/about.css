@@ -112,7 +112,7 @@
 .cardp {
   max-width: 25em;
   width: 70%;
-  min-width: 18em;
+  min-width: 20em;
   height: 30em;
 
   margin-right: 10rem;
@@ -216,7 +216,7 @@
 .containero {
   position: relative;
   max-width: 500px;
-  width: 120%;
+  width: 100%;
   background: var(--main2);
   margin: 0 0px;
   margin-top: 30px;

@@ -50,7 +50,7 @@
   }
   
   .project-h1 .a8a .c {
-    color: #7746eb;
+    color: var(--darker);
   }
   
   .project-text {
@@ -64,9 +64,14 @@
   
   
   .project-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    
+    grid-auto-rows: auto;
+    
+    grid-gap: 1rem;
+    
     flex-direction: row;
     margin-inline: -10px;
   }
