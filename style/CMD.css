@@ -126,6 +126,14 @@
   }
 
 
+  @media (max-width: 500px) {
+
+    .acrd-txt h1 {
+      font-size: 30px;
+    }
+  }
+
+
 
   @media (min-width: 1050px) {
     .acrd-txt {
@@ -136,6 +144,21 @@
   @media (max-width:1065px) {
     .acrd-txt {
       margin-inline: 5rem;
+    }
+  }
+
+
+
+  @media (max-width: 950px) {
+    .acrd-body {
+      margin-bottom: 0px;
+    }
+  }
+  
+  @media (max-width: 720px) {
+
+    .acrd-txt h1 {
+      margin-inline: -50px;
     }
   }
   
