@@ -189,8 +189,8 @@
   
   /*end contact*/
   
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     .contact-us .section-heading h2, .contact-us .section-heading h2 em, .contact-us .section-heading h2 {
-      font-size: 10px;
+      font-size: 40px;
     }
   }

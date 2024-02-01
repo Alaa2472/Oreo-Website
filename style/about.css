@@ -111,7 +111,7 @@
 /**CAAAAARRRRRDDD**/
 .cardp {
   max-width: 25em;
-  width: 70%;
+  width: 90%;
   min-width: 20em;
   height: 30em;
 
@@ -216,7 +216,7 @@
 .containero {
   position: relative;
   max-width: 500px;
-  width: 100%;
+  width: 130%;
   background: var(--main2);
   margin: 0 0px;
   margin-top: 30px;
@@ -242,7 +242,7 @@
   width: 100%;
   border-radius: 6px;
   margin-top: 6px;
-  background: rgba(236, 236, 236, 0.1);
+  background: var(--main);
 }
 
 .skill-baro .skill-pero {
@@ -364,6 +364,15 @@
   }
   
   @media (max-width: 780px) {
+
+    .cardp {
+      max-width: 90%;
+      min-width: auto;
+    }
+
+    .containero {
+      width: 90%;
+    }
     .otto {
       flex-direction: column;
     }
@@ -384,14 +393,13 @@
   
   @media (max-width: 450px) {
     .cardp {
-      max-width: 20em;
+      max-width: 99%;
+      min-width: auto;
     }
 
     .waves {
       margin-bottom: -2px;
     }
-    .containero {
-      width: 90%;
-    }
+
   }
   
