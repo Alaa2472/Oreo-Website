@@ -142,7 +142,7 @@
   color: var(--darker);
   text-align: center;
   display: block;
-  font-size: 1em;
+  font-size: 10em;
 }
 
 .cardp .info {
@@ -383,6 +383,10 @@
   
   
   @media (max-width: 450px) {
+    .cardp {
+      max-width: 20em;
+    }
+
     .waves {
       margin-bottom: -2px;
     }
