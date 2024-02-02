@@ -200,56 +200,6 @@ section {
 
 
 
-/** HERO SECTION**/
-
-.hero h1 {
-  
-  color: var(--dark);
-  padding-inline: 15px;
-  word-spacing: 2px;
-  margin-block: 15px;
-  margin-inline: 15%;
-  font-size: 65px;
-  font-weight: 800;
-}
-
-.hero h2 {
-  margin-bottom: 7px;
-  font-size: 30px;
-  font-weight: 600;
-  color: var(--darker);
-}
-
-.hero p {
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-inline: 10%;
-  z-index: 10;  
-  color: var(--dark);
-}
-
-.landing h1 span {
-  color: var(--darker);
-}
-
-.h-btn {
-  margin-top: 15px;
-  padding-block: 10px;
-  padding-inline: 15px;
-  color: aliceblue;
-  background-color: var(--dark);
-  font-size: large;
-  font-weight: 700;
-  border-radius: 25px;
-  z-index: 10;
-  position: relative;
-}
-
-.h-btn:hover {
-  background-color: var(--darker);
-}
-
 .oreo {
   position: absolute;
   bottom: 0;
@@ -357,22 +307,22 @@ section {
 }
 
 .parallax > use:nth-child(1) {
-  animation-delay: -1s;
-  animation-duration: 7.5s;
+  animation-delay: -2s;
+  animation-duration: 10.5s;
 }
 
 .parallax > use:nth-child(2) {
   animation-delay: -5s;
-  animation-duration: 10s;
+  animation-duration: 14s;
 }
 
 .parallax > use:nth-child(3) {
-  animation-delay: -10s;
-  animation-duration: 15s;
+  animation-delay: -7s;
+  animation-duration: 17s;
 }
 
 .parallax > use:nth-child(4) {
-  animation-delay: -20s;
+  animation-delay: -8s;
   animation-duration: 20s;
 }
 
@@ -593,10 +543,6 @@ section {
   .about-text h1 {
     font-size: 45px;
   }
-
-
-
-
   .project-txt h1 {
     font-size: 45px;
     margin-inline: -50px;
@@ -657,11 +603,8 @@ section {
 }
 
 
-@media (max-width: 400) {
+@media (max-width: 300px) {
 
-  .hero h2 {
-    font-size: larger;
-  }
   .carde {
     min-width: 100px;
     width: auto;
@@ -690,7 +633,8 @@ section {
 
 
 
-.footer {
+.footer
+ {
   position: relative;
   background: var(--dark);
   width: 99.9%;
