@@ -57,9 +57,9 @@
   
 
 
-  @media (max-width: 300px) {
+  @media (max-width: 500px) {
     .waves {
-      margin-bottom: -30px;
+      margin-bottom: -300px;
     }
   
     .hero h2 {
