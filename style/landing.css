@@ -344,6 +344,12 @@
     font-size: 2em;
     font-weight: 400;
   }
+
+  .oreo {
+
+    margin-bottom: -25px;
+  
+  }
 }
 
 
@@ -376,10 +382,31 @@
   .oreo {
     margin-bottom: -45vh;
   }
+  .waves2 {
+    height: 1vh;
+  }
 
   .offcanvas.offcanvas-start {
-    min-width: 150px;
+    min-width: 50px;
+    margin-left: 10px;
     max-width: 250px;
+  width: 80%;
+  }
+
+  .offcanvas-body .nav-item .btn {
+    display: flex;
+    flex-direction: row;
+    padding-block: 10px;
+    padding-left: 12.5px;
+    background-color: var(--dark);
+    margin-bottom: 15px;
+    align-items: center;
+    border-radius: 13px;
+    font-weight: 400;
+    font-size: medium;
+    color: var(--main);
+    width: 90%;
+    height: 35px;
   }
 
   .landing {
