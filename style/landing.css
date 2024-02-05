@@ -380,7 +380,7 @@
 
   
   .oreo {
-    margin-bottom: -45vh;
+    margin-bottom: -46vh;
   }
   .waves2 {
     height: 1vh;
@@ -390,7 +390,7 @@
     min-width: 50px;
     margin-left: 10px;
     max-width: 250px;
-  width: 80%;
+    width: 80%;
   }
 
   .offcanvas-body .nav-item .btn {
@@ -405,7 +405,6 @@
     font-weight: 400;
     font-size: medium;
     color: var(--main);
-  
     height: 35px;
   }
 
