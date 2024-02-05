@@ -480,11 +480,6 @@ section {
   margin-bottom: 248px;
 }
 
-.footer {
-  margin-bottom: 0;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
 
 .waves {
   margin-bottom: 0px;
@@ -648,5 +643,8 @@ section {
   border-top-left-radius: 15px;
 }
 
-
-
+@media (max-width: 650px) {
+  .ftr {
+    display: none;
+  }
+}
