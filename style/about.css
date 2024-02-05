@@ -109,6 +109,12 @@
 
 
 /**CAAAAARRRRRDDD**/
+
+.share .icon {
+  font-size: 30px;
+}
+
+
 .cardp {
   max-width: 25em;
   width: 90%;
@@ -400,6 +406,10 @@
     .waves {
       margin-bottom: -2px;
     }
+
+.share .icon {
+  font-size: 25px;
+}
 
   }
   
