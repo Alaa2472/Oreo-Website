@@ -344,17 +344,10 @@
     font-size: 2em;
     font-weight: 400;
   }
-
- 
-  .oreo {
-
-    margin-bottom: -25px;
-  
-  }
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
 
   .carde {
     min-width: 100px;
@@ -380,6 +373,18 @@
   }
 
   
+  .oreo {
+    margin-bottom: -45vh;
+  }
+
+  .offcanvas.offcanvas-start {
+    min-width: 150px;
+    max-width: 250px;
+  }
+
+  .landing {
+    height: 130vh;
+  }
 }
 
 
