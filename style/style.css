@@ -8,9 +8,15 @@
 
 html,
 body {
+  background: var(--main);
+}
+
+.body {
+
+  display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--main);
+  margin-inline: auto;
 }
 
 .container,

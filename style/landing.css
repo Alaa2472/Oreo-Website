@@ -60,6 +60,12 @@
 }
 
 
+.mn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+}
 
 .alaa {
   position: absolute;
@@ -223,13 +229,6 @@
 
 
 @media (max-width:820px) {
-  .About {
-    min-height: 82vh;
-  }
-
-  .about-text h1 {
-    margin-inline: 2rem;
-  }
 
   .hero h1 {
     font-size: 50px;
