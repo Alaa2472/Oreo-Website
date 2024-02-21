@@ -68,7 +68,7 @@
 }
 
 .alaa {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: center;
