@@ -117,12 +117,12 @@
 
 .cardp {
   max-width: 25em;
-  width: 90%;
+  width: 85%;
   min-width: 20em;
   height: 30em;
 
   margin-right: 10rem;
-  background: var(--main2);
+  background: var(--main);
   transition: 1s ease-in-out;
   clip-path: polygon(
     30px 0%,
@@ -182,8 +182,8 @@
 }
 
 .cardp a {
-  color: white;
-  transition: 0.2s ease-in-out;
+  color: #526D82;
+  transition: 0.19s ease-in-out;
 }
 
 .cardp a:hover {
@@ -198,14 +198,14 @@
   border-radius: 25px;
   border: none;
   font-weight: bold;
-  background: #ffffff;
-  color: rgb(0, 0, 0);
-  transition: 0.25s ease-in-out;
+  background: #526D82;
+  color: #fff;
+  transition: 0.2s ease-in-out;
 }
 
 .cardp button:hover {
   background: var(--darker);
-  color: white;
+  color: #DDE6ED;
   cursor: pointer;
   margin-inline: auto;
 }
@@ -352,11 +352,7 @@
   }
   }
 
-  @media (max-width: 850px) { 
-  .waves {
-    margin-bottom: 11px;
-  }
-
+  @media (max-width: 850px) {
   .About {
     min-height: 82vh;
   }
@@ -372,7 +368,7 @@
   @media (max-width: 780px) {
 
     .cardp {
-      max-width: 90%;
+      max-width: 75%;
       min-width: auto;
     }
 
@@ -397,14 +393,10 @@
   }
   
   
-  @media (max-width: 450px) {
+  @media (max-width: 500px) {
     .cardp {
-      max-width: 99%;
+      max-width: 90%;
       min-width: auto;
-    }
-
-    .waves {
-      margin-bottom: -2px;
     }
 
 .share .icon {

@@ -110,7 +110,7 @@ section {
   margin-left: 25px;
   margin-top: 60px;
   margin-bottom: 60px;
-  background: var(--darker);
+  background: var(--main);
   border-radius: 20px;
   
 }
@@ -127,6 +127,7 @@ section {
   display: flex;
   justify-content: center;
   justify-items: center;
+  color: var(--darker);
 }
 
 .offcanvas .btn-close:focus {
@@ -141,7 +142,7 @@ section {
 }
 
 .offcanvas-title {
-  color: var(--main);
+  color: var(--darker);
   font-size: x-large;
   font-weight: 600;
   margin-left: 10px;
@@ -196,18 +197,6 @@ section {
 
 
 
-
-
-
-
-.oreo {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: -25px;
-  width: 100%;
-  z-index: 0;
-}
-
 .oreo2 {
   width: 100%;
 }
@@ -220,15 +209,6 @@ section {
 }
 
 /**WWWWWWAAAAAAAAVVVVVVVVVVVEEEEEEEEESSSSSSSSSS**/
-.waves {
-  position: relative;
-  width: 100%;
-  gap: 10;
-  margin-bottom: auto;
-  /*Fix for safari gap*/
-  min-height: 150px;
-  max-height: 200px;
-}
 
 
 .waves2 {
@@ -250,7 +230,6 @@ section {
   /*Fix for safari gap*/
   min-height: 150px;
   max-height: 200px;
-  background: transparent;
 }
 .waves3 {
   position: relative;
@@ -376,11 +355,7 @@ section {
   .waves9 {
     margin-bottom: 0px;
   }
-  .waves {
-
-  margin-bottom: 0px;
-  }
-
+  
   .oreo {
 
   margin-bottom: -10px;
@@ -458,46 +433,6 @@ section {
 .hero p {
   margin-bottom: 10px;
 }
-}
-
-
-@media (max-width: 850px) { 
-
-  .hero-body h2 {
-    margin-top: 230px;
-      }
-    
-      .hero h1 {
-        font-size: 60px;
-      }
-
-  .phone-info {
-    text-align: center;
-  }
-
-.h-btn{
-  margin-top: 25px;
-  margin-bottom: 248px;
-}
-
-
-.waves {
-  margin-bottom: 0px;
-}
-}
-
-@media (min-width: 850px) {
-  
-  
-.waves {
-  margin-bottom: 15px;
-}
-}
-
-@media (min-width: 960px) {
-  .waves {
-    margin-bottom: 25px;
-}  
 }
 
 @media (max-width: 600px) {
