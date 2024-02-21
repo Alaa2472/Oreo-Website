@@ -65,6 +65,7 @@
   justify-content: center;
   align-items: center;
   margin-inline: auto;
+  height: 0;
 }
 
 .alaa {
@@ -337,6 +338,12 @@
   .alaa-stats {
     margin-inline: auto;
   }
+
+
+
+.landing {
+  height: 100vh;
+}
 
 }
 
