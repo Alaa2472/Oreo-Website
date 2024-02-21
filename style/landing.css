@@ -221,7 +221,6 @@
 
   .h-btn{
     margin-top: 25px;
-    margin-bottom: 85px;
 }
 
 }
@@ -336,8 +335,8 @@
     margin-inline: auto;
   }
 
-  .h-btn {
-    margin-bottom: 50px;
+  .landing {
+    height: inherit;
   }
 }
 
