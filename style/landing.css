@@ -313,42 +313,6 @@
 
 }
 
-@media (max-width:600px) {
-  .hero h1 {
-    font-size: 40px;
-    margin-inline: 5%;
-  }
-
-  .hero h2 {
-    font-weight: 700;
-    margin-inline: -50;
-  }
-}
-
-@media (max-width:500px) {
-
-  .hero h2 {
-    font-size: larger;
-  }
-
-  .alaa {
-    width: 90%;
-  }
-
-  .alaa-stats {
-    margin-inline: auto;
-  }
-
-  .hb-txt {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  .h-btn {
-    margin-bottom: 100px;
-  }
-}
-
 
 
 @media (max-width:400px) {
