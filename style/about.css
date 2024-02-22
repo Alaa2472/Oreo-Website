@@ -120,8 +120,6 @@
   max-width: 25em;
   width: 85%;
   min-width: 20em;
-  height: 30em;
-
   margin-right: 10rem;
   background: var(--main);
   transition: 1s ease-in-out;
@@ -222,7 +220,7 @@
   position: relative;
   max-width: 500px;
   width: 130%;
-  background: var(--main2);
+  background: var(--main);
   margin: 0 0px;
   margin-top: 30px;
   padding: 10px 20px;
@@ -247,7 +245,7 @@
   width: 100%;
   border-radius: 6px;
   margin-top: 6px;
-  background: var(--main);
+  background: var(--main2);
 }
 
 .skill-baro .skill-pero {
