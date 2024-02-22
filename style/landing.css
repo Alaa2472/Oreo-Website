@@ -244,6 +244,12 @@
 
 
 @media (max-width:720px) {
+
+
+  .hero p {
+    font-size: small;
+  }
+
   .contact-us .container .cow {
     flex-direction: column !important;
   }
@@ -329,6 +335,10 @@
 
   .hero h2 {
     font-size: larger;
+  }
+
+  .herp p {
+    font-size: smaller;
   }
 
   .alaa {
