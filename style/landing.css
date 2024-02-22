@@ -7,7 +7,11 @@
 
 
 .landing {
-  height: 88vh;
+  height: 100vh;
+  background-image: radial-gradient(#9DB2BF 1px, transparent 1px), radial-gradient(#9DB2BF 1px, transparent 1px);
+  background-size: 18px 18px;
+  background-position: 0 0, 9px 9px;
+  background-color: #dde6ed;
 }
 
 .hero h1 {
@@ -32,7 +36,7 @@
 }
 
 .hero p {
-  font-family: Arial,Helvetica,sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin-inline: 10%;
   color: var(--dark);
@@ -163,7 +167,7 @@
   }
 
   .contact-us .container .cow {
-    flex-direction: column!important;
+    flex-direction: column !important;
   }
 
   .project-txt {
@@ -213,15 +217,15 @@
 
   .hero h1 {
     font-size: 60px;
-}
+  }
 
   .phone-info {
     text-align: center;
-}
+  }
 
-  .h-btn{
+  .h-btn {
     margin-top: 25px;
-}
+  }
 
 }
 
@@ -241,7 +245,7 @@
 
 @media (max-width:720px) {
   .contact-us .container .cow {
-    flex-direction: column!important;
+    flex-direction: column !important;
   }
 
   .card button,
