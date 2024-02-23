@@ -8,7 +8,7 @@
 
 .landing {
   height: 89vh;
-  background-image: radial-gradient(#9DB2BF 1px, transparent 1px), radial-gradient(#9DB2BF 1px, transparent 1px);
+  background-image: radial-gradient(#9DB2BF 0.8px, transparent 0.8px), radial-gradient(#9DB2BF 0.8px, transparent 0.8px);
   background-size: 18px 18px;
   background-position: 0 0, 9px 9px;
   background-color: #dde6ed;
@@ -229,6 +229,7 @@
 
   .hero p {
     margin-bottom: 10px;
+    font-weight: 500;
   }
 }
 
